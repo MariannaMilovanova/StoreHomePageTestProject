@@ -1,0 +1,58 @@
+.subscription-wrapper {
+    padding: 55px 0px 23px;
+    .subscription-container {
+        display: flex;
+        background-color: #1b80d8;
+        background-image: url('../../../../images/bg.png');
+        height: 288px;
+        .subscription-content{
+            padding: 4% 0 0 0;
+            margin: 0 auto;
+            .subscription-header{
+                padding-top: 10px;
+                padding-right: 4px; 
+                color: #3e5e71;
+                font-weight: bold;
+                font-size: 12.4px;
+                letter-spacing: 1px;
+                text-align: center;
+            }
+            .subscription-text{
+                color: #fff;
+                font-family: 'Playfair Display', serif;
+                font-size: 38px;
+                padding-top: 26px;
+                padding-right: 6px; 
+                padding-bottom: 20px;
+                text-align: center;
+
+            }
+            .subscription-input-wrapper{
+                position: relative;
+                padding-top: 5%;
+                padding-left: 9.2%;
+                .subscription-input{
+                    background-color: rgba(0, 0, 0, 0);
+                    border: 2px solid #9ccdef;
+                    height: 50px;
+                    width: 302px;
+                    border-radius: 25px;
+                    color: rgba(255, 255, 255, 0.9);
+                    padding-left: 24px;
+                    font-size: 12.2px;
+                    letter-spacing: 0.75px;
+                    font-weight: 600;
+                }
+                .subscription-input::placeholder{
+                    color: rgba(255, 255, 255, 0.9);
+                }
+                .subscription-tick {
+                    position: absolute;
+                    top: 39px;
+                    right: 62px;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}

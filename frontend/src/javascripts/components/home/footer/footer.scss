@@ -1,0 +1,30 @@
+.footer-wrapper{
+    .footer-container{
+        max-width: 1349px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.865em;
+        font-weight: 700;
+        .logo{
+             padding: 7px 0px 0px 102px;
+        }
+        .footer-menu-list{
+            display: flex;
+            padding: 0px 0px 27px;
+            margin-left: 8.5%;
+            .footer-menu-item{
+                cursor: pointer;
+                list-style: none;
+                padding: 5px 23px 1px 28px;
+                letter-spacing: 1.4px;
+                text-transform: uppercase;
+            }
+        }
+        .copyright{
+            font-size: 1em;
+            padding: 1.15% 8% 0 0;
+            letter-spacing: 1.1px;
+        }
+    }
+}

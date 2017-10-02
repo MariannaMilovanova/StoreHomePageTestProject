@@ -1,0 +1,112 @@
+.catalog-body-wrapper {     
+        color: rgba(0,0,0,.87);
+        max-width: 1349px;
+        margin: 0 auto;
+    .catalog-header{
+        font-family: 'Playfair Display', serif;
+        text-align: center;
+        padding-top: 111px;
+        font-size: 59px;
+    }
+    .catalog-load-more-items{
+        font-weight: bold;
+        color: #888888;
+        text-align: center;
+        font-size: 12.4px;
+        padding-top: 34px;
+        padding-right: 7px;
+        letter-spacing: 0.9px;
+    }
+    .catalog-tag-menu-item-chosen{
+        color: blue;
+    }
+    .catalog-tag-menu-wrapper {
+        font-size: 12.2px;
+        font-weight: bold;
+        color: #999999;
+        letter-spacing: 1px;
+        display: flex;
+        padding-top: 64px; 
+        .catalog-tag-menu-list{
+            height: 54px;
+            margin: 0 auto;
+            display: flex;
+            padding: 16px 83px 14px 24px;
+            .catalog-tag-menu-item {
+                list-style: none;
+                padding-left: 54px;
+                text-transform: uppercase;
+                div {
+                    cursor: pointer;
+                }
+            }
+            .chosen{
+                color: black;
+                div {
+                    border-bottom: 2px solid #1375d3;
+                    padding-bottom: 3px;
+                }
+            }
+        }
+    }
+    .catalog-list-wrapper {
+        .catalog-list {
+            font-family: 'Playfair Display', serif;
+            margin: 0 auto;
+            font-size: 15.7px;
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 6.4%;
+            padding-right: 6.4%;
+            padding-top: 10px;
+            .catalog-item-wrapper {
+                padding: 15px 15px 14px;
+                position: relative;
+                .catalog-item-img {}
+                .catalog-item-title {
+                    padding-top: 23px;
+                    text-align: center;
+                }
+                .catalog-item-price {
+                    color: #999999;
+                    padding-bottom: 4px;
+                    text-align: center;
+                    font-family: 'Lato', sans-serif;
+                    padding-top: 6px;
+                }
+                .old-new-price-wrapper{
+                    color: #999999;
+                    padding-bottom: 4px;
+                    font-family: 'Lato', sans-serif;
+                    padding-top: 7px;
+                    text-align: center;
+                    .old-price{
+                        display: inline-block;
+                        text-decoration: line-through;
+                    }
+                    .new-price{
+                        display: inline-block;
+                        color: #fc411d;
+                        margin-left: 10px; 
+                    }
+                }
+            }
+            .isNew-true:after{
+                content:'NEW';
+                color: #fff;
+                border-radius: 15px;
+                font-family: 'Lato', sans-serif;
+                letter-spacing: 1px;
+                font-size: 10.5px;
+                line-height: 26px;
+                text-align: center;
+                width: 47px;
+                height: 25px;
+                background-color: #187dd6;
+                position: absolute;
+                left:42px;
+                top: 42px;            
+            }
+        }
+    }
+}

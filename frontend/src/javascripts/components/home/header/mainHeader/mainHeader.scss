@@ -1,0 +1,87 @@
+.main-header-wrapper {
+    border-bottom: 1px solid #ededed;
+    .main-header-container {
+        max-width: 1349px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        font-size: 0.865em;
+        font-weight: 700;
+     .logo{
+            padding: 29px 15px 27px 100px;
+        }
+        .main-header-menu-list {
+            display: flex;
+            padding: 23px 0px 24px 0px;
+            margin-right: 0px;
+            .main-header-menu-item{
+                list-style: none;
+                letter-spacing: 1.3px;
+                padding-top: 5px;
+                padding-left: 52px;
+                text-transform: uppercase;
+                div {
+                    cursor: pointer;
+                }
+            }
+            .main-header-menu-item:first-child {
+                padding-left: 72px;
+            } 
+            .main-header-menu-item:nth-child(5n) {
+                padding-left: 72px;
+            }
+
+            .chosen {
+                color: black;
+                div{
+                    border-bottom: 2px solid #1375d3;
+                    padding-bottom: 3px;
+                }
+
+            }
+            .sale {
+                color: #fc411d;
+            }
+        }
+        .basket-wrapper{
+            display: flex;
+            padding: 25px 0px 25px 0px;
+            margin-right: 14px;
+            letter-spacing: 1.4px;
+            .basket-label{
+                padding-top: 15px;
+                padding-left: 9px;
+            }
+            .basket-counter{
+                margin-left: 13px;
+                border: 2px solid RGB(31, 134, 218);
+                border-radius: 50%;
+                width: 48px;
+                height: 48px;
+                text-align: center;
+                line-height: 45px;
+            }
+        }
+        .search-wrapper {
+            position: relative;
+            top: 31px;
+            right: 102px;
+            .search-icon{
+                padding: 5px;
+                line-height: 35px;
+            }
+            .search-block{
+                position: absolute;
+                right: 0;
+                .search-input{
+                    input {border-radius: 0 !important}
+                }
+                .close-icon{
+                    position: absolute;
+                    right: 5px;
+                    top: 6px;
+                }
+            }
+        }
+    }
+}
