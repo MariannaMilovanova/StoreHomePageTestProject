@@ -4,9 +4,9 @@ import MainHeader from './mainHeader/mainHeader'
 import './header.scss'
 
 const Header = (props) => (
-    <div>
-        <SubHeader />
-        <MainHeader />
+    <div className='header-wrapper'>
+        <SubHeader changeCurrency={props.changeCurrency} changeLanguage={props.changeLanguage}/>
+        <MainHeader navigationMenuChange={props.navigationMenuChange} />
     </div>
 );
 

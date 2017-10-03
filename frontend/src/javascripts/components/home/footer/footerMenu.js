@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import { navigationMenu } from '../../../configuration/homePageMenu'
 
 export default class FooterMenu extends Component {
-    handleClick=(item)=> {
-        browserHistory.push(`/${item}`);
+    handleClick=(event, item)=> {
+        this.props.navigationMenuChange(item)
     }
     render() {
         return (
@@ -11,7 +11,7 @@ export default class FooterMenu extends Component {
                 {navigationMenu.map((item, i) => {
                     return (
                     <li key={i} className='footer-menu-item'
-                        onClick={(item)=>this.handleClick(item)}><div>{item}</div></li>
+                        onClick={(event)=>this.handleClick(event, item)}><div>{item}</div></li>
                 )})}
             </ul>
         )

@@ -8,8 +8,9 @@ export default class NavigationMenu extends Component {
             chosenTag: navigationMenu[1]
         }
     }
-    handleClick=(event)=>{
-        this.setState({chosenTag: event.target.innerText.toLowerCase()})
+    handleClick=(event, item)=>{
+        this.setState({chosenTag: event.target.innerText.toLowerCase()});
+        this.props.navigationMenuChange(item);
     }
     render() {
         return (
@@ -18,7 +19,7 @@ export default class NavigationMenu extends Component {
                     return (
                     <li key={i} className={this.state.chosenTag === item?
                             `main-header-menu-item chosen`: item == 'sale'? `main-header-menu-item sale`: `main-header-menu-item` } 
-                                                    ><div onClick={this.handleClick}>{item}</div></li>
+                                                    ><div onClick={(event)=>this.handleClick(event, item)}>{item}</div></li>
                 )})}
             </ul>
         )

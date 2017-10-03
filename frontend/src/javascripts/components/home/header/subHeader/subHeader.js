@@ -8,7 +8,7 @@ const SubHeader = (props) => (
     <div className='sub-header-wrapper'>
         <div className='sub-header-container'>
             <SubHeaderMenu />
-            <SubHeaderOptions />
+            <SubHeaderOptions changeCurrency={props.changeCurrency} changeLanguage={props.changeLanguage}/>
         </div>
     </div>
 );

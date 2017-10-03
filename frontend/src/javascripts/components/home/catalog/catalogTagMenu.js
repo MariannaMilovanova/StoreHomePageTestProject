@@ -8,8 +8,10 @@ export default class CatalogTagMenu extends Component {
             chosenTag: catalogTags[0]
         }
     }
-    handleClick=(event)=>{
-        this.setState({chosenTag: event.target.innerText.toLowerCase()})
+    handleClick=(event, tag)=>{
+        this.setState({chosenTag: event.target.innerText.toLowerCase()});
+        this.props.getCatalogItemsByTag(tag);
+
     }
     render() {
         return (
@@ -18,7 +20,7 @@ export default class CatalogTagMenu extends Component {
                     {catalogTags.map((tag, i) => {
                         return (
                         <li key={i} className={this.state.chosenTag === tag?'catalog-tag-menu-item chosen':'catalog-tag-menu-item'} 
-                            ><div onClick={this.handleClick}>{tag}</div></li>
+                            ><div onClick={(event)=>this.handleClick(event, tag)}>{tag}</div></li>
                     )})}
                 </ul>
             </div>

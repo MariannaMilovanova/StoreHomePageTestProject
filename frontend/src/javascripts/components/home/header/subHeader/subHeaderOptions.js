@@ -13,10 +13,12 @@ export default class SubHeaderOptions extends Component {
         }
     }
     handleLanguageChange = (event, data) => {
-        this.setState({valueLang: data.value})
+        this.setState({valueLang: data.value});
+        this.props.changeLanguage(data.value);
     }
     handleCurrencyChange = (event, data) => {
-        this.setState({valueCurr: data.value})
+        this.setState({valueCurr: data.value});
+        this.props.changeCurrency(data.value);
     }
     render() {
         return (

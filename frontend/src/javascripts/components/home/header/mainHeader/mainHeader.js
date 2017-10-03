@@ -12,7 +12,7 @@ const MainHeader = (props) => (
             <div className='logo'>
                 <img src={logo}/>
             </div>
-            <NavigationMenu />
+            <NavigationMenu navigationMenuChange={props.navigationMenuChange} />
             <Basket />
             <Search />
         </div>

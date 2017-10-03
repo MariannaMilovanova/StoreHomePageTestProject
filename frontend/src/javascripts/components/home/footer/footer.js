@@ -9,7 +9,7 @@ const Footer = (props) => (
             <div className='logo'>
                 <img src={logo}/>
             </div>
-            <FooterMenu />
+            <FooterMenu navigationMenuChange={props.navigationMenuChange}/>
             <div className='copyright'>&copy;2010 - 2016 All rights reserved</div>
         </div>
     </div>

@@ -2,13 +2,14 @@
         color: rgba(0,0,0,.87);
         max-width: 1349px;
         margin: 0 auto;
-    .catalog-header{
+        min-height: 751px;
+    .catalog-header {
         font-family: 'Playfair Display', serif;
         text-align: center;
         padding-top: 111px;
         font-size: 59px;
     }
-    .catalog-load-more-items{
+    .catalog-load-more-items {
         font-weight: bold;
         color: #888888;
         text-align: center;
@@ -16,14 +17,15 @@
         padding-top: 34px;
         padding-right: 7px;
         letter-spacing: 0.9px;
+        cursor: pointer;
     }
-    .catalog-tag-menu-item-chosen{
+    .catalog-tag-menu-item-chosen {
         color: blue;
     }
     .catalog-tag-menu-wrapper {
         font-size: 12.2px;
         font-weight: bold;
-        color: #999999;
+        color:  rgba(60, 55, 53, 0.58);
         letter-spacing: 1px;
         display: flex;
         padding-top: 64px; 
@@ -64,18 +66,19 @@
                 position: relative;
                 .catalog-item-img {}
                 .catalog-item-title {
+                    cursor: pointer;
                     padding-top: 23px;
                     text-align: center;
                 }
                 .catalog-item-price {
-                    color: #999999;
+                    color:  rgba(60, 55, 53, 0.58);
                     padding-bottom: 4px;
                     text-align: center;
                     font-family: 'Lato', sans-serif;
                     padding-top: 6px;
                 }
                 .old-new-price-wrapper{
-                    color: #999999;
+                    color:  rgba(60, 55, 53, 0.58);
                     padding-bottom: 4px;
                     font-family: 'Lato', sans-serif;
                     padding-top: 7px;

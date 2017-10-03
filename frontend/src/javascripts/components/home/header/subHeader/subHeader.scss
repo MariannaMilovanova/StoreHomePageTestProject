@@ -5,21 +5,24 @@
         max-width: 1349px;
         display: flex;
         font-size: 12.4px;
+        letter-spacing: 0.25px;
         font-weight: 700;
         justify-content: space-between;
         .sub-header-menu-list {
             padding: 7.8px 10px 6px 10px;
             margin: 0;
-            margin-left: 6.45%;
+            margin-left: 6.13%;
             width: 50%;
             display: flex;
+            a {
+                color: rgba(60, 55, 53, 0.58) !important;
+            }
             .sub-header-menu-item{
                 list-style: none;
-                padding: 5px;
-                padding-right:30px;
-            }
-            .sub-header-menu-item:last-child {
-                padding-left: 1.8px;
+                padding-top: 4px;
+                padding-bottom: 6px;
+                padding-right:24px;
+                padding-left: 8.5px;
             }
         }
         .sub-header-options-wrapper {
@@ -47,7 +50,7 @@
                 .sub-header-tick{
                     position: absolute;
                     bottom:19px;
-                    right: 21px;
+                    right: 5px;
                 }
             }
         }
